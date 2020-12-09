@@ -1,0 +1,3 @@
+var a, b, c, d; # declaring some variables
+a := (b add c) mul d sub 3; # doing some math
+# Actifsource ID=[7a5490c7-2ae2-11eb-b71a-1b2aeffa0078,a6d1b8c9-cedd-11de-80c2-87ac3b08f930,MI/Qwu+KchcvDQW/n3ZbGr5RMCk=]

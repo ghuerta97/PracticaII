@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: cl.ufro.dsl
+Bundle-ManifestVersion: 2
+Bundle-Name: cl.ufro.dsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: cl.ufro.dsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: cl.ufro.dsl.parser.antlr,
+ cl.ufro.dsl.scoping,
+ cl.ufro.dsl.validation,
+ cl.ufro.dsl.modeldata,
+ cl.ufro.dsl.modeldata.util,
+ cl.ufro.dsl.parser.antlr.internal,
+ cl.ufro.dsl.serializer,
+ cl.ufro.dsl,
+ cl.ufro.dsl.generator,
+ cl.ufro.dsl.services,
+ cl.ufro.dsl.modeldata.impl
+Import-Package: org.apache.log4j

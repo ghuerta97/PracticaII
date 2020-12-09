@@ -1,0 +1,25 @@
+grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
+
+generate myDsl "http://www.xtext.org/example/mydsl/MyDsl"
+
+Model:
+	declarations+=Declaration*
+;
+
+Declaration:
+	Device | Rule
+;
+Device:
+	'Device' name=ID 'can' 'be'
+		(states+=State(','states+=State)*)?
+;
+State:
+	name=ID
+;
+
+Rule:
+	'Rule' description=STRING
+		'when' when=[State|QualifiedName]
+		'then' then=[State|QualifiedName]
+;
+QualifiedName: ID ('.' ID)*;
